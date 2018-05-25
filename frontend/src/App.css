@@ -9,6 +9,12 @@
   opacity: 0.85;
 }
 
+.img2 {
+  background-image: url("traffic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .title {
   margin-top: 50px;
   color: rgb(140, 144, 147);
@@ -21,6 +27,29 @@
   width: 50%;
 }
 
+@media (max-width: 900px){
+  .but {
+    margin-top: 55px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+} 
+
+@media (min-width: 901px){
+  .but {
+    margin-top: 106px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }  
+} 
+
+
+.text {
+  margin-top: 50px;
+  background-color: #242628;
+  padding: 65px;
+  color: white;
+}
 
 @media (max-width: 900px){
   .form {
@@ -34,6 +63,18 @@
 footer {
   margin-top: 220px;
   color: rgb(140, 144, 147);
+}
+
+@media (max-width: 900px){
+  .signinfoot {
+    margin-top: 225px;
+  }
+} 
+
+@media (min-width: 901px){
+  .signinfoot {
+    margin-top: 327px;
+  }
 }
 
 @media (max-width: 900px){
