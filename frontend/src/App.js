@@ -15,13 +15,14 @@ import {
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="App img">
         <Container>
           <Row>
             <Col>
-              <h1>Leave!</h1>
+              <h1 className="title">Leave!</h1>
             </Col>
           </Row>
+          <Row className="justify-content-center">
           <Form className="form">
             <FormGroup>
               <Input
@@ -52,8 +53,18 @@ class App extends Component {
               />
             </FormGroup>
             <Button className="SUB">Sign Up!</Button>
-          </Form>  
-        </Container>  
+          </Form> 
+          </Row> 
+        </Container> 
+        <Container>
+          <Row>
+            <Col>
+              <footer>
+              © 2018
+              </footer>
+            </Col>
+          </Row>
+        </Container>   
       </div>
     );
   }
