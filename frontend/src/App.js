@@ -5,6 +5,9 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import LandingPage from './Landing';
 import SignUpPage from './Signup';
 import SignInPage from './Signin';
+import Dashboard from './Dashboard';
+import Profile from './Profile';
+import Destinations from './Destinations';
 
 import './App.css';
 
@@ -29,6 +32,18 @@ class App extends Component {
               exact path={routes.SIGN_IN}
               component={() => <SignInPage />}
             /> 
+            <Route
+              exact path={routes.DASHBOARD}
+              component={() => <Dashboard />}
+            />
+            <Route
+              exact path={routes.PROFILE}
+              component={() => <Profile />}
+            />
+            <Route
+              exact path={routes.DESTINATIONS}
+              component={() => <Destinations />}
+            />
           </div> 
         </Router>
       </div>  
