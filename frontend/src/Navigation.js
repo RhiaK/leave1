@@ -1,6 +1,9 @@
 import React from 'react';
-import { Nav, NavItem, NavLink, Button, Row } from 'reactstrap';
-import './App.css'
+import { Nav, NavItem, Row } from 'reactstrap';
+import './App.css';
+import { Link } from 'react-router-dom';
+import * as routes from './constants/routes';
+import SignOutButton from './Signout';
 
 class Navigation extends React.Component {
   render() {
@@ -9,16 +12,25 @@ class Navigation extends React.Component {
         <Row className="justify-content-center">
           <p className="navtitle">Leave!</p>
           <Nav vertical>
-            <NavItem>
-              <NavLink className="navitem" href="#">Dashboard</NavLink>
+            <NavItem className="navitem">
+              <Link
+              className="link"
+              to={routes.DASHBOARD}>
+              Dashboard</Link>
             </NavItem>
-            <NavItem>
-              <NavLink className="navitem" href="#">Profile</NavLink>
+            <NavItem className="navitem">
+              <Link 
+              className="link"
+              to={routes.PROFILE}
+              >Profile</Link>
             </NavItem>
-            <NavItem>
-              <NavLink className="navitem navbottom" href="#">Destinations</NavLink>
+            <NavItem className="navitem navbottom">
+              <Link 
+              className="link"
+              to={routes.DESTINATIONS}
+              >Destinations</Link>
             </NavItem>
-            <Button className="navbut">Sign Out</Button>
+            <NavItem><SignOutButton /></NavItem>
           </Nav>
         </Row>
       </div>
