@@ -1,5 +1,10 @@
 .App {
   text-align: center;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+body {
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 .img {
@@ -20,6 +25,7 @@
   width: 230px;
   margin-top: 20px;
   height: 570px;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 .nomargin {
@@ -33,10 +39,16 @@
   color: white;
   font-size: 25px;
   margin-top: 30px;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 .navitem {
   margin-top: 35px;
+  color: #D96E2A;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+.link {
   color: #D96E2A;
 }
 
@@ -47,12 +59,13 @@
 }
 
 .navbottom {
-  margin-bottom: 275px;
+  margin-bottom: 320px;
 }
 
 .title {
   margin-top: 50px;
   color: rgb(140, 144, 147);
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 .form {
@@ -60,14 +73,15 @@
   background-color: #242628;
   padding: 75px;
   width: 50%;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 .navbut {
-  width: 150px;
-  margin-left: 40px;
+  width: 120px;
   float: bottom;
   position: relative;
   background-color: #D96E2A !important;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 @media (max-width: 900px){
@@ -92,6 +106,7 @@
   background-color: #242628;
   padding: 65px;
   color: white;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 @media (max-width: 900px){
@@ -100,6 +115,7 @@
     background-color: #242628;
     padding: 75px;
     width: 80%;
+    font-family: 'PT Sans Caption', sans-serif;
   }
 }  
 
@@ -107,39 +123,46 @@
   margin-left: auto;
   margin-right: auto;
   padding-left: 40%;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 @media (max-width: 900px) {
   .navfooter {
     margin-top: 98px;
+    font-family: 'PT Sans Caption', sans-serif;
   }
 }
 
 @media (min-width: 901px) {
   .navfooter {
     margin-top: 190px;
+    font-family: 'PT Sans Caption', sans-serif;
   }
 }
 
 footer {
   margin-top: 220px;
   color: rgb(140, 144, 147);
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 @media (max-width: 900px){
   .signinfoot {
-    margin-top: 225px;
+    margin-top: 237px;
+    font-family: 'PT Sans Caption', sans-serif;
   }
 } 
 
 @media (min-width: 901px){
   .signinfoot {
     margin-top: 327px;
+    font-family: 'PT Sans Caption', sans-serif;
   }
 }
 
-@media (max-width: 900px){
+@media (max-width: 767px){
   footer {
-    margin-top: 120px;
+    margin-top: 135px;
+    font-family: 'PT Sans Caption', sans-serif;
   }
 } 

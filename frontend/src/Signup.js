@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import * as routes from './constants/routes';
 import {
     Form,
     FormGroup,
@@ -11,8 +12,75 @@ import {
 } from 'reactstrap';
 
 
-class SignUpPage extends Component {
+const SignUpPage = ({ history }) =>
+  <div>
+
+    <SignUpForm history={ history }></SignUpForm>   
+
+  </div>
+
+const INITIAL_STATE = {
+  username: '',
+  email: '',
+  passwordOne: '',
+  passwordTwo: '',
+  error: null
+};
+
+const byPropKey = (propertyName, value) => () => ({
+  [propertyName]: value,
+});
+
+class SignUpForm extends Component {
+    constructor(props) {
+      super(props);
+
+    this.state = { ...INITIAL_STATE };
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      dropdownOpen: false
+    };
+  }
+
+  toggle() {
+      this.setState(prevState => ({
+        dropdownOpen: !prevState.dropdownOpen
+      }));
+  }
+
+  onSubmit = (e) => {
+      const {
+        email,
+        password,
+      } = this.state;
+
+      const {
+        history,
+      } = this.props;
+
+      // db.doCreateUserWithEmailAndPassword(email, password)
+      //   .then(authUser => {
+      //     this.setState(() => ({ ...INITIAL_STATE }));
+      //     history.push(routes.DASHBOARD);
+      //   })
+      //   .catch(error => {
+      //     this.setState(byPropKey('error', error));
+      //   });
+
+      e.preventDefault();
+  }
+
+
   render() {
+    const {
+        name,
+        email,
+        password,
+        phone,
+        error,
+    } = this.state;
+
     return (
       <div className="App img">
         <Container>
@@ -26,6 +94,8 @@ class SignUpPage extends Component {
             <FormGroup>
               <Input
                 type="name"
+                value={this.state.value}
+                onChange={event => this.setState(byPropKey('name', event.target.value))}
                 name="name"
                 placeholder="Enter your name"
               />
@@ -33,6 +103,8 @@ class SignUpPage extends Component {
             <FormGroup> 
               <Input 
                 type="email"
+                value={this.state.value}
+                onChange={event => this.setState(byPropKey('email', event.target.value))}
                 name="email"
                 placeholder="Enter your email address"
               />
@@ -40,6 +112,8 @@ class SignUpPage extends Component {
             <FormGroup>  
               <Input
                 type="password"
+                value={this.state.value}
+                onChange={event => this.setState(byPropKey('password', event.target.value))}
                 name="password"
                 placeholder="Enter your password"
               />
@@ -47,11 +121,14 @@ class SignUpPage extends Component {
             <FormGroup>
               <Input
                 type="phone"
+                value={this.state.value}
+                onChange={event => this.setState(byPropKey('phone', event.target.value))}
                 name="phone"
                 placeholder="Enter your phone number"
               />
             </FormGroup>
             <Button className="SUB">Sign Up!</Button>
+            { error && <p>{error.message}</p> }
           </Form> 
           </Row> 
         </Container> 
@@ -70,3 +147,6 @@ class SignUpPage extends Component {
 }
 
 export default SignUpPage;
+export {
+  SignUpForm,
+}
