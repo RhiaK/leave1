@@ -35,7 +35,7 @@ class Destinations extends Component {
                         type="locname"
                         name="locname"
                         id="locname"
-                        placeholder="Name your location"
+                        placeholder="Name your destination"
                       />
                     </Col>
                   </FormGroup>
