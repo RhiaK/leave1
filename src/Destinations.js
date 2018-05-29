@@ -157,10 +157,10 @@ class Dest extends Component {
           </Row>
         </Container>
           <Show />
-        <Container>  
-          <Row>
+        <Container className="foot">  
+          <Row className="justify-content-center">
             <Col>
-              <footer className="navfooter">
+              <footer>
               © 2018 BDABRK. All rights reserved.
               </footer>
             </Col>

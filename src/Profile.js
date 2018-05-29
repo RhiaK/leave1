@@ -143,10 +143,10 @@ class Profile extends Component {
             </Col>                         
           </Row>
         </Container>    
-        <Container> 
+        <Container className="foot"> 
           <Row>
             <Col>
-              <footer className="navfooter">
+              <footer>
               © 2018 BDABRK. All rights reserved.
               </footer>
             </Col>

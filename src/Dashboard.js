@@ -20,10 +20,12 @@ class Dashboard extends Component {
             <Col>
             <h4>Coming Soon!</h4>
             </Col>
-          </Row>  
+          </Row>
+        </Container>  
+        <Container className="foot">    
           <Row>
             <Col>
-              <footer className="navfooter">
+              <footer>
               © 2018 BDABRK. All rights reserved.
               </footer>
             </Col>
