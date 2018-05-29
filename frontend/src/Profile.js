@@ -24,21 +24,17 @@ class Profile extends Component {
           </Row>
         </Container>
          <Container>
+           <Row>
+            <Col>
+              <h4>Hello, enter or update your home address below</h4>
+            </Col>
+          </Row>
           <Row>
             <Col>
-              <Form className="locform">
+              <Form className="homeform">
                 <Row className="justify-content-center">    
                   <FormGroup>
-                  <h4 className="home">Home</h4>
-                    <Col sm="12">
-                      <Input
-                        className="locwide" 
-                        type="locname"
-                        name="locname"
-                        id="locname"
-                        placeholder="Name your location"
-                      />
-                    </Col>
+                  <h3 className="home">Home</h3>
                   </FormGroup>
                 </Row>
                 <Row className="justify-content-center">   

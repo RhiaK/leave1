@@ -82,6 +82,56 @@ body {
   }
 }
 
+@media (max-width: 900px){
+  .homeform {
+    left: 300px;
+    right: 50px;
+  }
+}  
+
+@media (min-width: 901px) {
+  .homeform {
+    left: 600px;
+  }
+}
+
+@media (max-width: 900px){
+  h4, h5 {
+    left: 300px;
+    right: 50px;
+  }
+}  
+
+@media (min-width: 901px) {
+  h4, h5 {
+    left: 600px;
+  }
+}
+
+h4 {
+  color: #D96E2A !important;
+  position: fixed;
+  width: 400px;
+  top: 90px;
+  padding-right: 15px;
+  background-color: rgba(36, 38, 40, 0.5);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'PT Sans Caption', sans-serif;  
+}
+
+h5 {
+  color: #D96E2A !important;
+  position: fixed;
+  width: 400px;
+  top: 400px;
+  padding-right: 15px;
+  background-color: rgba(36, 38, 40, 0.8);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'PT Sans Caption', sans-serif; 
+}
+
 .locwide {
   width: 350px !important;
   margin-left: 15px;
@@ -89,6 +139,17 @@ body {
 
 .Dbut{
   background-color: #D96E2A !important; 
+}
+
+.homeform {
+  position: fixed;
+  width: 400px;
+  top: 290px;
+  padding-right: 15px;
+  background-color: rgba(36, 38, 40, 0.8);
+  padding-top: 25px;
+  padding-bottom: 25px;
+  font-family: 'PT Sans Caption', sans-serif;  
 }
 
 .locform {
@@ -129,6 +190,7 @@ body {
 .home {
   color: #D96E2A;
   margin-top: -10px;
+  margin-bottom: -10px;
 }
 
 .but {

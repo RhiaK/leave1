@@ -18,7 +18,7 @@ class Dashboard extends Component {
             <Navigation />
             </Col>
             <Col>
-            <p className="other">Other things will go here</p>
+            <h4>Coming Soon!</h4>
             </Col>
           </Row>  
           <Row>
