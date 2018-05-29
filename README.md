@@ -17,13 +17,11 @@ Leave! uses Google Maps and Google Distance Matrix APIs to ensure that the infor
 
 ![Sign Up Page](src/images/ScreenShot2018-05-29at2.30.01PM.png)
 ![Sign In Page](src/images/ScreenShot2018-05-29at2.29.41PM.png)
-![Sign Up Page](src/images/ScreenShot2018-05-29at2.30.01PM.png)
 ![Profile Page](src/images/ScreenShot2018-05-29at2.29.20PM.png)
-![Dashboard Page](src/images/
-ScreenShot2018-05-29at2.28.04PM.png)
+![Dashboard Page](src/images/ScreenShot2018-05-29at2.28.04PM.png)
 
 ## Trello Board
-[here](https://trello.com/b/YndRvBUZ/group-proj-rk-bd-ab)
+[Click to be redirected](https://trello.com/b/YndRvBUZ/group-proj-rk-bd-ab)
 
 ## What We Are Most Proud Of
 
