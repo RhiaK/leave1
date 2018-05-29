@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navigation from './Navigation';
+import Show from './Show';
 import {
     Container,
     Row,
@@ -12,7 +13,7 @@ import {
 } from 'reactstrap';
 
 
-class Destinations extends Component {
+class Dest extends Component {
   render() {
     return (
       <div className="App img2">
@@ -155,6 +156,7 @@ class Destinations extends Component {
             </Col>                         
           </Row>
         </Container>
+          <Show />
         <Container>  
           <Row>
             <Col>
@@ -169,4 +171,4 @@ class Destinations extends Component {
   }
 }
 
-export default Destinations;
+export default Dest;
