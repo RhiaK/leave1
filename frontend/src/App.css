@@ -126,6 +126,11 @@ body {
   }
 } 
 
+.home {
+  color: #D96E2A;
+  margin-top: -10px;
+}
+
 .but {
   color: white;
 }

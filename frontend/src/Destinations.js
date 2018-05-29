@@ -126,7 +126,7 @@ class Destinations extends Component {
                 </Row>
                 <Row className="justify-content-center">  
                   <FormGroup>
-                    <Col sm={{ size: 7, offset: 3}}>
+                    <Col sm={{ size: 8, offset: 1}}>
                       <Input 
                         type="zip"
                         name="zip"
@@ -135,6 +135,15 @@ class Destinations extends Component {
                       />
                     </Col>
                   </FormGroup>
+                  <FormGroup>
+                    <Col sm={{ size: 12, offset: 0}}>
+                      <Input
+                        type="time"
+                        name="time"
+                        id="time"
+                      />
+                    </Col>
+                  </FormGroup>      
                 </Row>
                 <Row className="justify-content-center">  
                   <FormGroup check row>
