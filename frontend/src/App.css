@@ -126,6 +126,10 @@ body {
   }
 } 
 
+.but {
+  color: white;
+}
+
 @media (min-width: 901px){
   .but {
     margin-top: 106px;

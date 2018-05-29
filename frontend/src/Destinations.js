@@ -48,7 +48,7 @@ class Destinations extends Component {
                         type="address"
                         name="address"
                         id="address"
-                        placeholder="Enter street address"
+                        placeholder="Street address"
                       />
                     </Col>
                   </FormGroup>

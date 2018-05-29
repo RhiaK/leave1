@@ -4,8 +4,7 @@ import Navigation from './Navigation';
 import {
     Container,
     Row,
-    Col,
-    Button
+    Col
 } from 'reactstrap';
 
 

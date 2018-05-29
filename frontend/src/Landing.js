@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Link } from 'react-router-dom';
+import * as routes from './constants/routes';
 import {
     Container,
     Row,
@@ -32,8 +34,22 @@ class LandingPage extends Component {
           	</Col>
           </Row>		
           <Row className="justify-content-center">
-            <Button className="but">Sign Up!</Button>
-            <Button className="but">Sign In!</Button>
+            <Button 
+              className="but">
+            <Link 
+              className="but"
+              to={routes.SIGN_UP}>
+            Sign Up!
+            </Link>
+            </Button>
+            <Button 
+              className="but">
+            <Link
+              className="but"
+              to={routes.SIGN_IN}>
+            Sign In!
+            </Link>
+            </Button>
           </Row> 
         </Container> 
         <Container>
