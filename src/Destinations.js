@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navigation from './Navigation';
+import Show from './Show';
 import {
     Container,
     Row,
@@ -12,7 +13,7 @@ import {
 } from 'reactstrap';
 
 
-class Destinations extends Component {
+class Dest extends Component {
   render() {
     return (
       <div className="App img2">
@@ -35,7 +36,7 @@ class Destinations extends Component {
                         type="locname"
                         name="locname"
                         id="locname"
-                        placeholder="Name your location"
+                        placeholder="Name your destination"
                       />
                     </Col>
                   </FormGroup>
@@ -48,7 +49,7 @@ class Destinations extends Component {
                         type="address"
                         name="address"
                         id="address"
-                        placeholder="Enter street address"
+                        placeholder="Street address"
                       />
                     </Col>
                   </FormGroup>
@@ -126,7 +127,7 @@ class Destinations extends Component {
                 </Row>
                 <Row className="justify-content-center">  
                   <FormGroup>
-                    <Col sm={{ size: 7, offset: 3}}>
+                    <Col sm={{ size: 8, offset: 1}}>
                       <Input 
                         type="zip"
                         name="zip"
@@ -135,6 +136,15 @@ class Destinations extends Component {
                       />
                     </Col>
                   </FormGroup>
+                  <FormGroup>
+                    <Col sm={{ size: 12, offset: 0}}>
+                      <Input
+                        type="time"
+                        name="time"
+                        id="time"
+                      />
+                    </Col>
+                  </FormGroup>      
                 </Row>
                 <Row className="justify-content-center">  
                   <FormGroup check row>
@@ -146,6 +156,7 @@ class Destinations extends Component {
             </Col>                         
           </Row>
         </Container>
+          <Show />
         <Container>  
           <Row>
             <Col>
@@ -160,4 +171,4 @@ class Destinations extends Component {
   }
 }
 
-export default Destinations;
+export default Dest;
