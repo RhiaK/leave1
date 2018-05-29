@@ -28,7 +28,7 @@ Leave! uses Google Maps and Google Distance Matrix APIs to ensure that the infor
 
 
 ## To Download and Run Locally
-Fork a copy of this repo, make sure to run npm install to install all needed dependencies. also fork and clone the backend: [here](https://github.com/410dood/django-rest). Make sure to create a local database:
+Fork a copy of this repo, make sure to run npm install to install all dependencies then fork and clone the backend: [here](https://github.com/410dood/django-rest). Make sure to create a local database:
 ```
 $ psql
 > CREATE DATABASE leave;
