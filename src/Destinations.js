@@ -34,8 +34,8 @@ class Dest extends Component {
                       <Input
                         className="locwide" 
                         type="locname"
-                        name="locname"
-                        id="locname"
+                        name="dest_title"
+                        id="dest_title"
                         placeholder="Name your destination"
                       />
                     </Col>
@@ -47,8 +47,8 @@ class Dest extends Component {
                       <Input
                         className="locwide" 
                         type="address"
-                        name="address"
-                        id="address"
+                        name="dest_add"
+                        id="dest_add"
                         placeholder="Street address"
                       />
                     </Col>
@@ -59,24 +59,25 @@ class Dest extends Component {
                     <Col sm={{ size: 12, order: 2, offset: 1 }}>
                       <Input 
                         type="city"
-                        name="city"
-                        id="city"
+                        name="dest_city"
+                        id="dest_city"
                         placeholder="City"
                       />
                     </Col>
                   </FormGroup>
                   <Col sm={{ size: 5, order: 2, offset: 0 }}> 
                   <FormGroup>
-                      <Input type="select" name="state" id="stateSelect">
+                      <Input type="select" name="dest_state" id="dest_state">
                         <option>State</option>
                         <option>Alabama</option>
                         <option>Alaska</option>
                         <option>Arizona</option>
-                        <option>Askansas</option>
+                        <option>Arkansas</option>
                         <option>California</option>
                         <option>Colorado</option>
                         <option>Connecticut</option>
                         <option>Delaware</option>
+                        <option>District of Columbia</option>
                         <option>Florida</option>
                         <option>Georgia</option>
                         <option>Hawaii</option>
@@ -130,8 +131,8 @@ class Dest extends Component {
                     <Col sm={{ size: 8, offset: 1}}>
                       <Input 
                         type="zip"
-                        name="zip"
-                        id="zip"
+                        name="dest_zip"
+                        id="dest_zip"
                         placeholder="Zip Code"
                       />
                     </Col>
@@ -140,8 +141,8 @@ class Dest extends Component {
                     <Col sm={{ size: 12, offset: 0}}>
                       <Input
                         type="time"
-                        name="time"
-                        id="time"
+                        name="dest_time"
+                        id="dest_time"
                       />
                     </Col>
                   </FormGroup>      

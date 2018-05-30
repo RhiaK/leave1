@@ -5,24 +5,37 @@ import Dest from './Destinations';
 
 
 class Show extends Component {
-  constructor(props) {
-    super(props);
+  // constructor(props) {
+  //   super(props);
 
-    this.addDest = this.addDest.bind(this);
+  state = {
+    dest: []
+  };
+  
+  async componentDidMount() {
+    try {
+      const res = await fetch('http://127.0.0.1:8000/api/');
+      const dests = await res.json();
+      this.setState({
+        dests
+      });
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
+
+    // this.addDest = this.addDest.bind(this);
    
-    this.state = {
-      dest: [],
-    };
+  //   console.log(this.props.db);
+  // }
 
-    console.log(this.props.db);
-  }
-
-  addDest(newDestBody){
-    const newState = Object.assign({}, this.state);
-    newState.dests.push(newDestBody);
-    this.props.db.ref().push().set(newDestBody);
-    this.setState(newState);
-  }
+  // addDest(newDestBody){
+  //   const newState = Object.assign({}, this.state);
+  //   newState.dests.push(newDestBody);
+  //   this.props.db.ref().push().set(newDestBody);
+  //   this.setState(newState);
+  // }
 
   // componentDidMount() {
   //   this.props.db.ref().on('child_added', snapshot => {
@@ -32,15 +45,18 @@ class Show extends Component {
   //   });
   // }
 
-  render(){
+  render() {
     return (
-        <div>
-        <h5>Showing destinations entered</h5>
-        <ul>
-        </ul>
-        </div>
-    )
+      <div>
+        {this.state.list.map(item => (
+          <div>
+            <h1>{item.dest_title}</h1>
+            <span>{item.dest_add}</span>
+          </div>
+        ))}
+      </div>
+    );
   }
-};
+}
 
 export default Show;
