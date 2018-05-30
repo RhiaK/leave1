@@ -24,7 +24,7 @@ Leave! uses Google Maps and Google Distance Matrix APIs to ensure that the infor
 [Click to be redirected](https://trello.com/b/YndRvBUZ/group-proj-rk-bd-ab)
 
 ## What We Are Most Proud Of
-
+My dashing good looks
 
 
 ## To Download and Run Locally

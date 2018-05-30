@@ -22,8 +22,7 @@ const SignUpPage = ({ history }) =>
 const INITIAL_STATE = {
   username: '',
   email: '',
-  passwordOne: '',
-  passwordTwo: '',
+  password: '',
   error: null
 };
 
